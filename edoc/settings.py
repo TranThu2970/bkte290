@@ -25,7 +25,7 @@ SECRET_KEY = 'qmdk(q8#r06*63!8++deayj%c(nj12br+w1sy&klx9bk&p^ov4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bkte290.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['bkte290.herokuapp.com','127.0.0.1']
 
 
 # Application definition
