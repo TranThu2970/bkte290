@@ -1,2 +1,1 @@
-# bkte290
-bkt
+# Huong dan Git co ban
