@@ -25,25 +25,6 @@ SECRET_KEY = 'qmdk(q8#r06*63!8++deayj%c(nj12br+w1sy&klx9bk&p^ov4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-<<<<<<< HEAD
-=======
-LOGGING = {
-   'version': 1,
-   'disable_existing_loggers': False,
-   'handlers': {
-       'console': {
-           'class': 'logging.StreamHandler',
-       },
-   }, 
-   'loggers': {
-       'django': {
-           'handlers': ['console'],
-            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
-       },
-   },
-}
-
->>>>>>> b99b61c57945b6207c7ca648127d442f50a80ad2
 ALLOWED_HOSTS = ['bkte290.herokuapp.com','127.0.0.1']
 
 
@@ -64,15 +45,9 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-<<<<<<< HEAD
 
     'whitenoise.middleware.WhiteNoiseMiddleware',
 
-=======
-    
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-    
->>>>>>> b99b61c57945b6207c7ca648127d442f50a80ad2
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -116,12 +91,9 @@ DATABASES = {
     }
 }
 
-<<<<<<< HEAD
 # import dj_database_url
 # db_from_env = dj_database_url.config(conn_max_age=600)
 # DATABASES['default'].update(db_from_env)
-=======
->>>>>>> b99b61c57945b6207c7ca648127d442f50a80ad2
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 

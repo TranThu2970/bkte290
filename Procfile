@@ -1,1 +1,1 @@
-web: gunicorn edoc.wsgi --log-file -
+web: gunicorn intro.wsgi --log-file -
