@@ -77,7 +77,9 @@
     /* width: 200px; */
     height: 600px;
     overflow-y: auto;
+
   }
+
 *,
 *::before,
 *::after {
@@ -99,9 +101,27 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #000000;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff; 
+/* The emerging W3C standard
+   that is currently Firefox-only */ 
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: rgb(62, 228, 250) rgb(213, 236, 233);   /* scroll thumb and track */
+
+}
+/* Works on Chrome/Edge/Safari */
+/* *::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+} */
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -3484,7 +3504,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 0rem 1rem; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;
@@ -8187,7 +8207,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #666666; }
+  color: #000000; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8368,8 +8388,8 @@ h1, h2, h3, h4, h5,
       font-size: 16px;
       letter-spacing: .1em; }
     .ftco-navbar-light.scrolled .nav-link {
-      padding-top: 0.9rem !important;
-      padding-bottom: 0.9rem !important;
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.5rem !important;
       color: #000000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #96bb7c !important; }
@@ -10024,20 +10044,28 @@ textarea.form-control {
 
 }
 .spycontent div {
-  width: 1000px;
-  height: 700px;
+  width: 900px;
+  /* height: 700px; */
   font-size: 28px;
 }
-#section1 {color: #fff; background-color: #1E88E5;}
+/* #section1 {color: #fff; background-color: #1E88E5;}
 #section2 {color: #fff; background-color: #673ab7;}
 #section3 {color: #fff; background-color: #ff9800;}
 #section41 {color: #fff; background-color: #00bcd4;}
-#section42 {color: #fff; background-color: #009688;}
+#section42 {color: #fff; background-color: #009688;} */
 
-@media screen and (max-width: 810px) {
+/* @media screen and (max-width: 810px) {
   #section1, #section2, #section3, #section41, #section42  {
     margin-left: 150px;
   }
+} */
+
+.search-section {
+  min-height: 70px;
 }
 
+br {
+  font-size: 5px;
+  padding-bottom: 50px;
 
+}
