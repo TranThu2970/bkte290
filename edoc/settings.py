@@ -86,8 +86,8 @@ DATABASES = {
         'NAME': 'mydb',
         'USER': 'myuser',
         'PASSWORD': 'conbac2960',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'HOST': 'myusername-667.postgres.pythonanywhere-services.com',
+        'PORT': '10667',
     }
 }
 
