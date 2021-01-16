@@ -25,6 +25,22 @@ SECRET_KEY = 'qmdk(q8#r06*63!8++deayj%c(nj12br+w1sy&klx9bk&p^ov4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+LOGGING = {
+   'version': 1,
+   'disable_existing_loggers': False,
+   'handlers': {
+       'console': {
+           'class': 'logging.StreamHandler',
+       },
+   }, 
+   'loggers': {
+       'django': {
+           'handlers': ['console'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+       },
+   },
+}
+
 ALLOWED_HOSTS = ['bkte290.herokuapp.com','127.0.0.1']
 
 
